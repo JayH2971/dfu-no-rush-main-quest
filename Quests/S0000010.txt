@@ -33,7 +33,7 @@ AcceptQuest:  [1002]
 <ce>             has reason to not wish harm upon the Blades.
 <ce>               We want you to infiltrate Castle Llugwych
 <ce>                  in Ykalon and remove the _reward_.
-<ce>             Please have this done in =itemindung_ days if
+<ce>             Please have this done if
 <ce>                 you want your information and reward.
 
 QuestFail:  [1003]
@@ -80,7 +80,7 @@ QuestorPostsuccess:  [1008]
  An agent of the Underking has sent me to
  Castle Llugwych in Ykalon to find a certain
  _reward_ the Necromancers stole from
- the Underking. I have =itemindung_ days to find
+ the Underking. I have to find
  and return the _reward_.
 
 QuestLogEntry:  [1010]
@@ -146,10 +146,7 @@ Place _llugwych_ permanent LlugwychCastle
 Place _agentplace_ remote house2
 Place _lysandustomb_ permanent LysandusTomb2
 
-Clock _S.04_ 6.23:20 0 flag 1 range 0 1
-Clock _S.10_ 30.00:00
---removed flags from S.10 to make it 30 exact days
-Clock _itemindung_ 00:00 0 flag 17 range 0 2
+Clock _S.04_ 1.00:00
 
 Foe _F.00_ is Wraith
 
@@ -169,7 +166,6 @@ _S.01_ task:
 
 yes task:
 	place item _reward_ at _llugwych_ marker 0
-	start timer _itemindung_ 
 	log 1008 step 0 
 	reveal _llugwych_ in province 40 at 26340 
 	say AcceptQuest 
@@ -181,14 +177,12 @@ _no_ task:
 
 _S.04_ task:
 	add dialog for location _agentplace_ person _agentuk_ 
-	start timer _S.10_ 
 	give pc letter14 notify 1022 
 	create npc at _agentplace_ 
 	place npc _agentuk_ at _agentplace_ 
 
 _S.05_ task:
 	clicked npc _agentuk_ 
-	stop timer _S.10_ 
 	prompt QuestorOffer yes yes no _no_ 
 
 _S.06_ task:
@@ -201,9 +195,3 @@ _S.08_ task:
 _S.09_ task:
 	when _S.07_ and _S.08_ 
 	start timer _S.04_ 
-
-_S.10_ task:
-	end quest 
-
-_itemindung_ task:
-	end quest 

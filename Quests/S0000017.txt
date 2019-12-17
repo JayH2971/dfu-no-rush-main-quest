@@ -111,8 +111,7 @@ Person _Akorithi_ named Queen_Akorithi atHome
 
 Place _wayrest_ permanent WayrestCastle
 
-Clock _2letter_ 7.00:00 14.00:00
-
+Clock _2letter_ 1.00:00
 
 --	Quest start-up:
 	dialog link for item _item_ 

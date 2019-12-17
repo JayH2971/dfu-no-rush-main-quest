@@ -114,7 +114,7 @@ Place _crypt_ remote dungeon0
 
 Clock _delay_ 00:02 0 flag 1 range 0 1
 Clock _S.01_ 00:02 0 flag 1 range 0 1
-Clock _S.06_ 30.00:00 0 flag 1 range 0 1
+Clock _S.06_ 1.00:00 0 flag 1 range 0 1
 
 Foe _mummy_ is Mummy
 
