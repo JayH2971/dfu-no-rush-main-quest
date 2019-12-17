@@ -36,8 +36,7 @@ AcceptQuest:  [1002]
 <ce>                    on Direnni Tower. If Nulfaga is
 <ce>                    indeed mad, you must search her
 <ce>                     castle for this horn yourself
-<ce>                    and bring it back to me. I will
-<ce>                expect you back in =2shedungent_ days.
+<ce>                    and bring it back to me.
 
 QuestFail:  [1003]
 <ce>                   Without that horn, I cannot help
@@ -119,8 +118,8 @@ QuestLogEntry:  [1010]
  There I must retrieve the horn of the
  Great Unicorn. If Nulfaga is unable to
  help, I must search her castle Shedugent
- for the horn myself. I have =2shedungent_ days
- to return to Direnni Tower.
+ for the horn myself and deliver it to
+ Medora.
 
 Message:  1020
 <ce>                  The delicate, spiraled horn curves
@@ -149,14 +148,9 @@ Person _nulfaga_ named Nulfaga atHome
 
 Place _huntstart_ permanent Shedungent4
 
-Clock _2shedungent_ 00:00 0 flag 17 range 0 2
-
 
 --	Quest start-up:
 	prompt QuestorOffer yes yes no _no_ 
-
-_2shedungent_ task:
-	end quest 
 
 _S.01_ task:
 	clicked npc _nulfaga_ 
@@ -172,7 +166,6 @@ _S.05_ task:
 variable _S.06_
 yes task:
 	place item horn at _huntstart_ marker 1
-	start timer _2shedungent_ 
 	log 1010 step 0 
 	reveal _huntstart_ in province 16 at 50966 
 	say AcceptQuest 
