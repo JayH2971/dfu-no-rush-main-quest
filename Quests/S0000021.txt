@@ -3,7 +3,7 @@
 -- QuestId: 21
 Messages: 13
 Quest: S0000021
-DisplayName: Lich's Soul
+DisplayName: NR Lich's Soul
 -- Message panels
 QRC:
 

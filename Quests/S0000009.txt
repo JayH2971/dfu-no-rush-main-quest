@@ -3,7 +3,7 @@
 -- QuestId: 9
 Messages: 22
 Quest: S0000009
-DisplayName: Elysana's Betrayal
+DisplayName: NR Elysana's Betrayal
 -- Message panels
 QRC:
 

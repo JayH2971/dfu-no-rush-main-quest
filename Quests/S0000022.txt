@@ -3,7 +3,7 @@
 -- QuestId: 22
 Messages: 12
 Quest: S0000022
-DisplayName: Lysandus' Revelation
+DisplayName: NR Lysandus' Revelation
 -- Message panels
 QRC:
 

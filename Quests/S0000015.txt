@@ -3,7 +3,7 @@
 -- QuestId: 15
 Messages: 46
 Quest: S0000015
-DisplayName: Lysandus' Revenge
+DisplayName: NR Lysandus' Revenge
 -- Message panels
 QRC:
 

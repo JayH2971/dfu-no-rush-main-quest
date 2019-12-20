@@ -3,7 +3,7 @@
 -- QuestId: 12
 Messages: 22
 Quest: S0000012
-DisplayName: The Emperor's Courier
+DisplayName: NR The Emperor's Courier
 -- Message panels
 QRC:
 

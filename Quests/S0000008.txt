@@ -2,7 +2,7 @@
 -- Main story quest.
 -- QuestId: 8
 Messages: 71
-Quest: S0000008
+Quest: NR S0000008
 DisplayName: Who Gets the Totem
 -- Message panels
 QRC:

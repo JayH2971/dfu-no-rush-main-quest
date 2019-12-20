@@ -3,7 +3,7 @@
 -- QuestId: 17
 Messages: 23
 Quest: S0000017
-DisplayName: Wayrest Painting
+DisplayName: NR Wayrest Painting
 -- Message panels
 QRC:
 
