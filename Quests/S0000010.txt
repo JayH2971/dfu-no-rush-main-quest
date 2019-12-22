@@ -112,7 +112,7 @@ Dear %pcn,
  tales and consider the Underking the ultimate force of
  evil, we apologize for misjudging you. Otherwise, we
  need your help. You can find me at _agentplace_
- of __agentplace_ in Sentinel. I will wait one month.
+ of __agentplace_ in Sentinel.
  
  
 <ce>                             -- _agentuk_
